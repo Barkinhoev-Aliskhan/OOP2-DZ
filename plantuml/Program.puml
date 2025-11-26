@@ -1,0 +1,23 @@
+@startuml
+enum SubscriptionStatus {
+    Trial,
+    Basic,
+    Pro,
+    Student,
+}
+class Subscriber {
+    + Id : string <<get>>
+    + Region : string <<get>>
+    + TenureMonths : int <<get>>
+    + Devices : int <<get>>
+    + BasePrice : double <<get>>
+    + Subscriber(id:string, region:string, status:SubscriptionStatus, tenureMonths:int, devices:int, basePrice:double)
+}
+class BillingService {
+    + Validate(s:Subscriber) : (bool Ok, string Error)
+    + CalcTotal(s:Subscriber) : double
+}
+class Program {
+}
+Subscriber --> "Status" SubscriptionStatus
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+!include .\\Program.puml
+!include .\\obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net9.0\func2.AssemblyInfo.puml
+!include .\\obj\Debug\net9.0\func2.GlobalUsings.g.puml
+!include .\\obj\Release\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.puml
+!include .\\obj\Release\net9.0\func2.AssemblyInfo.puml
+!include .\\obj\Release\net9.0\func2.GlobalUsings.g.puml
+@enduml
